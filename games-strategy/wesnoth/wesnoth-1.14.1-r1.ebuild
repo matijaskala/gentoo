@@ -109,6 +109,6 @@ src_install() {
 	DOCS="README.md changelog.md players_changelog.md" cmake-utils_src_install
 	if use dedicated || use server; then
 		keepdir "/run/wesnothd"
-		newinitd "${FILESDIR}"/wesnothd.rc wesnothd
+		newinitd "${FILESDIR}"/wesnothd.rc-r1 wesnothd
 	fi
 }
